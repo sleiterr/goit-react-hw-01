@@ -1,9 +1,11 @@
-const Product = () => {
+// src/components/Product.jsx
+
+export const Product = ({ name, imgUrl, price }) => {
   return (
     <div>
-      <h2>Price: 999 credits</h2>
+      <h2>{name}</h2>
+      <img src={imgUrl} alt={name} width="480" />
+      <p>Price: {price} credits</p>
     </div>
   );
 };
-
-export default Product;
