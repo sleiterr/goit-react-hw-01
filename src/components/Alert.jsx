@@ -1,19 +1,21 @@
 // src/components/Alert.jsx
 
+import clsx from "clsx"
 import "./Alert.css";
 
 const Alert = ({ variant, outlined, elevated, children }) => {
-  const classNames = ["alert", variant];
-
-  if (outlined) { 
-    classNames.push("is-outlined");
-  }
-
-  if (elevated) { 
-    classNames.push("is-elevated");
-  }
-
-  return <div className={classNames.join(" ")}>{children}</div>
+  return (
+    <p
+      className={clsx(
+        "alert",
+        variant,
+        outlined && "is-outlined",
+        elevated && "is-elevated"
+      )}
+    >
+      { children }
+    </p>
+  );
 };
 
 export default Alert;
