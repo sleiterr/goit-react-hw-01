@@ -1,10 +1,10 @@
 import Profile from "./componets/Profile/profile";
-import "./App.css"
-import userData from "./data/userData.json";
+import "./Alert.css"
+import userData from "./userData.json";
 
 const App = () => {
   return (
-    <div className="container">
+    <div>
       <Profile
         name={userData.username}
         tag={userData.tag}
