@@ -1,0 +1,9 @@
+.friends-list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.friends-list-item img {
+  margin-right: 10px;
+}
