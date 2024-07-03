@@ -1,0 +1,10 @@
+/* FriendsList.module.css */
+
+.friend-list {
+  list-style: none;
+  padding: 0;
+}
+
+.friend-list li {
+  margin-bottom: 10px;
+}
