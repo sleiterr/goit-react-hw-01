@@ -23,5 +23,4 @@ dist-ssr
 *.sln
 *.sw?
 
-# Exclude my-react-project directory
-my-react-project/
+.vercel
