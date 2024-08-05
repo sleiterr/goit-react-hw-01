@@ -1,20 +1,21 @@
-// FriendsListItem.jsx
-
 import PropTypes from "prop-types";
-import "./FriendsListItem.module.css";
+import styles from "./FriendsListItem.module.css";
 
 const FriendsListItem = ({ avatar, name, isOnline }) => {
   return (
-    <div className="friends-list-item">
-      <img src={avatar} alt="Avatar" width="48" />
-      <p>{name}</p>
-      <p className={isOnline ? "status online" : "status offline"}>
+    <div className={styles.friendsListItem}>
+      <img src={avatar} alt="Avatar" className={styles.avatar} />
+      <p className={styles.name}>{name}</p>
+      <p
+        className={`${styles.status} ${
+          isOnline ? styles.online : styles.offline
+        }`}
+      >
         {isOnline ? "Online" : "Offline"}
       </p>
     </div>
   );
 };
-
 
 FriendsListItem.propTypes = {
   avatar: PropTypes.string.isRequired,

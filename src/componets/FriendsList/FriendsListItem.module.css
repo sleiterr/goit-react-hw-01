@@ -1,11 +1,39 @@
-/* FriendsListItem.css */
-
-.friends-list-item {
+.friendListItem {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 10px;
+  padding: 10px 15px;
+  background-color: #f9f9f9;
+  margin: 5px;
+  width: 150px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
 }
 
-.friends-list-item img {
-  margin-right: 10px;
+.friendListItem:hover {
+  background-color: #f1f1f1;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+.name {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.status {
+  font-size: 16px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.online {
+  color: #4caf50;
+}
+
+.offline {
+  color: #f44336;
+}
+
