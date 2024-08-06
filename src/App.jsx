@@ -1,7 +1,7 @@
 // App.jsx
 
 import "./Alert.css"
-import Profile from "./components/Profil/Profil";
+import Profile from "./components/Profile/Profile";
 import FriendsList from "./components/FriendsList/FriendsList";
 import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 import userData from "./data/userData.json";
